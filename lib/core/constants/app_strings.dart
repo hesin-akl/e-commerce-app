@@ -1,0 +1,30 @@
+abstract class AppStrings {
+  static const String enterYourUsername = 'Enter your username';
+  static const String username = 'Username';
+  static const String email = 'E-mail';
+  static const String phone = 'Phone Number';
+  static const String phoneExample = ' 01233751313';
+  static const String emailExample = 'Jhonsmith@gmail.com';
+  static const String yourAddress = 'Your Address';
+  static const String enterYourAddress = 'Enter Your Address';
+  static const String enterYourPassword = 'Enter your password';
+  static const String confirmPassword = 'Confirm password';
+  static const String confirmCode = 'Confirm Code';
+  static const String confirm = 'Confirm';
+  static const String password = 'Password';
+  static const String repeatPassword = 'Repeat Password';
+  static const String newPassword = 'New Password';
+  static const String plzEnterNewPassword = 'Please write your new password';
+  static const String signUp = 'Sign Up';
+  static const String logIn = 'Log In';
+  static const String rememberMe = 'Remember Me';
+  static const String forgotPassword = 'Forgot Password?';
+  static const String verifyEmail = 'Verify Email Address';
+  static const String verifyEmailText = 'Verification code sent to ';
+  static const String alreadyHaveAnAccount = 'Already have an account?';
+  static const String dontHaveAnAccount = 'Don\'t have an account?';
+  static const String updateProfile = 'Update Profile';
+  static const String updateInformation = 'Update Information';
+  static const String searchBar = 'Search for stores';
+  static const String orderNow = 'Order Now';
+}

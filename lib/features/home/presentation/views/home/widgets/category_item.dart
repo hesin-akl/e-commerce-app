@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/core/constants/app_styles.dart';
+import 'package:e_commerce_app/core/themeing/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CategoryItem extends StatelessWidget {
@@ -12,17 +12,11 @@ class CategoryItem extends StatelessWidget {
       children: [
         Container(
           padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-          
-            shape: BoxShape.circle,
-          ),
+          decoration: BoxDecoration(shape: BoxShape.circle),
           child: Image.asset(img, width: 40, height: 40),
         ),
         const SizedBox(height: 6),
-        Text(
-          name,
-          style: AppStyles.secondaryTextStyle.copyWith(fontSize: 12),
-        ),
+        Text(name, style: AppStyles.secondaryTextStyle.copyWith(fontSize: 12)),
       ],
     );
   }

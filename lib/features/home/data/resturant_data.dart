@@ -1,5 +1,5 @@
-import 'package:e_commerce_app/core/constants/app_assets.dart';
-import 'package:e_commerce_app/features/home/data/resturant/resturant_model.dart';
+import 'package:e_commerce_app/core/themeing/app_assets.dart';
+import 'package:e_commerce_app/features/home/data/model/resturant_model.dart';
 
 final List<ResturantModel> resturantData = [
   ResturantModel(

@@ -1,12 +1,17 @@
-import 'package:e_commerce_app/core/constants/app_color.dart';
-import 'package:e_commerce_app/core/constants/app_styles.dart';
+import 'package:e_commerce_app/core/themeing/app_color.dart';
+import 'package:e_commerce_app/core/themeing/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class HaveAnAccWidget extends StatelessWidget {
   final String text1;
   final String text2;
   final VoidCallback onPressed;
-  const HaveAnAccWidget({super.key, required this.text1, required this.text2, required this.onPressed});
+  const HaveAnAccWidget({
+    super.key,
+    required this.text1,
+    required this.text2,
+    required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {

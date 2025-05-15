@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/core/constants/app_styles.dart';
+import 'package:e_commerce_app/core/themeing/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class MostPopularWidget extends StatelessWidget {
@@ -14,9 +14,12 @@ class MostPopularWidget extends StatelessWidget {
           Text("Most Popular", style: AppStyles.primaryTextStyle),
           Row(
             children: [
-              Text("See More", style: AppStyles.secondaryTextStyle.copyWith(fontSize: 12)),
-              SizedBox(width: 5,),
-              Icon(Icons.arrow_forward_ios,size: 12.51,),
+              Text(
+                "See More",
+                style: AppStyles.secondaryTextStyle.copyWith(fontSize: 12),
+              ),
+              SizedBox(width: 5),
+              Icon(Icons.arrow_forward_ios, size: 12.51),
             ],
           ),
         ],

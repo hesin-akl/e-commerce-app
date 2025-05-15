@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/features/home/data/category/category_data.dart';
+import 'package:e_commerce_app/features/home/data/category_data.dart';
 import 'package:e_commerce_app/features/home/presentation/views/home/widgets/category_item.dart';
 
 import 'package:flutter/material.dart';

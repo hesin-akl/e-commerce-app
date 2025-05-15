@@ -1,4 +1,4 @@
-abstract class AppRoutes {
+abstract class Routes {
   static const String splashScreen = '/';
   static const String signupScreen = '/signup';
   static const String loginScreen = '/login';

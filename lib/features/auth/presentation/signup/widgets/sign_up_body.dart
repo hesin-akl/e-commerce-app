@@ -1,5 +1,6 @@
-import 'package:e_commerce_app/core/constants/app_routes.dart';
-import 'package:e_commerce_app/core/constants/app_strings.dart';
+import 'package:e_commerce_app/core/helpers/extention.dart';
+import 'package:e_commerce_app/core/routing/routes.dart';
+import 'package:e_commerce_app/core/themeing/app_strings.dart';
 import 'package:e_commerce_app/features/auth/presentation/components/have_an_acc_widget.dart';
 import 'package:e_commerce_app/features/auth/presentation/components/logo_widget.dart';
 import 'package:e_commerce_app/features/auth/presentation/signup/widgets/sign_up_form.dart';
@@ -24,7 +25,7 @@ class SignUpBody extends StatelessWidget {
               text1: AppStrings.alreadyHaveAnAccount,
               text2: AppStrings.logIn,
               onPressed: () {
-                Navigator.pushReplacementNamed(context, AppRoutes.loginScreen);
+                context.pushNamed(Routes.loginScreen);
               },
             ),
           ],

@@ -1,8 +1,8 @@
-import 'package:e_commerce_app/core/constants/app_color.dart';
-import 'package:e_commerce_app/core/constants/app_routes.dart';
-import 'package:e_commerce_app/core/constants/app_strings.dart';
-import 'package:e_commerce_app/core/constants/app_styles.dart';
-import 'package:e_commerce_app/core/utils/main_button.dart';
+import 'package:e_commerce_app/core/themeing/app_color.dart';
+import 'package:e_commerce_app/core/routing/routes.dart';
+import 'package:e_commerce_app/core/themeing/app_strings.dart';
+import 'package:e_commerce_app/core/themeing/app_styles.dart';
+import 'package:e_commerce_app/core/widgets/main_button.dart';
 import 'package:e_commerce_app/features/auth/presentation/components/input_box_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +27,7 @@ class _LogInFormState extends State<LogInForm> {
             labelText: '${AppStrings.email} / ${AppStrings.phone}',
             obscureText: false,
           ),
-                SizedBox(height: 16),
+          SizedBox(height: 16),
 
           InputBoxWidget(
             hintText: AppStrings.enterYourPassword,
@@ -39,7 +39,10 @@ class _LogInFormState extends State<LogInForm> {
                   isSecured = !isSecured;
                 });
               },
-              icon: isSecured? Icon(Icons.remove_red_eye):Icon(Icons.visibility_off),
+              icon:
+                  isSecured
+                      ? Icon(Icons.remove_red_eye)
+                      : Icon(Icons.visibility_off),
             ),
           ),
           Padding(
@@ -56,7 +59,10 @@ class _LogInFormState extends State<LogInForm> {
                           isChecked = value!;
                         });
                       },
-                      visualDensity: VisualDensity(horizontal: -4, vertical: -4),
+                      visualDensity: VisualDensity(
+                        horizontal: -4,
+                        vertical: -4,
+                      ),
                       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     ),
                     SizedBox(width: 5),
@@ -66,10 +72,10 @@ class _LogInFormState extends State<LogInForm> {
                     ),
                   ],
                 ),
-      
+
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, AppRoutes.forgotPasswordScreen);
+                    Navigator.pushNamed(context, Routes.forgotPasswordScreen);
                   },
                   child: Text(
                     AppStrings.forgotPassword,

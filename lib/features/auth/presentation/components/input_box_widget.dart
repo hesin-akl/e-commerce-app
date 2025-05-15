@@ -1,5 +1,5 @@
-import 'package:e_commerce_app/core/constants/app_styles.dart';
-import 'package:e_commerce_app/features/auth/presentation/components/custom_text_field.dart';
+import 'package:e_commerce_app/core/themeing/app_styles.dart';
+import 'package:e_commerce_app/core/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class InputBoxWidget extends StatelessWidget {
@@ -11,7 +11,8 @@ class InputBoxWidget extends StatelessWidget {
     super.key,
     required this.hintText,
     required this.labelText,
-    required this.obscureText, this.suffixIcon,
+    required this.obscureText,
+    this.suffixIcon,
   });
 
   @override
@@ -22,7 +23,11 @@ class InputBoxWidget extends StatelessWidget {
       children: [
         Text(labelText, style: AppStyles.primaryTextStyle),
         SizedBox(height: 8),
-        CustomTextField(hintText: hintText, obscureText: obscureText,suffixIcon:suffixIcon ,),
+        CustomTextField(
+          hintText: hintText,
+          obscureText: obscureText,
+          suffixIcon: suffixIcon,
+        ),
       ],
     );
   }

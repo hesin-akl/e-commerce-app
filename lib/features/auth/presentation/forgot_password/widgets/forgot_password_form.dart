@@ -1,9 +1,9 @@
-import 'package:e_commerce_app/core/constants/app_assets.dart';
-import 'package:e_commerce_app/core/constants/app_routes.dart';
-import 'package:e_commerce_app/core/constants/app_strings.dart';
-import 'package:e_commerce_app/core/constants/app_styles.dart';
-import 'package:e_commerce_app/core/utils/main_button.dart';
-import 'package:e_commerce_app/features/auth/presentation/components/custom_text_field.dart';
+import 'package:e_commerce_app/core/themeing/app_assets.dart';
+import 'package:e_commerce_app/core/routing/routes.dart';
+import 'package:e_commerce_app/core/themeing/app_strings.dart';
+import 'package:e_commerce_app/core/themeing/app_styles.dart';
+import 'package:e_commerce_app/core/widgets/main_button.dart';
+import 'package:e_commerce_app/core/widgets/custom_text_field.dart';
 import 'package:e_commerce_app/features/auth/presentation/components/onboarding_photo.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +41,7 @@ class ForgotPasswordForm extends StatelessWidget {
         MainButton(
           title: AppStrings.confirm,
           onPressed: () {
-            Navigator.pushNamed(context, AppRoutes.verifyEmailScreen);
+            Navigator.pushNamed(context, Routes.verifyEmailScreen);
           },
         ),
       ],

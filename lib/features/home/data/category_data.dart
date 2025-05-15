@@ -1,5 +1,5 @@
-import 'package:e_commerce_app/core/constants/app_assets.dart';
-import 'package:e_commerce_app/features/home/data/category/category_model.dart';
+import 'package:e_commerce_app/core/themeing/app_assets.dart';
+import 'package:e_commerce_app/features/home/data/model/category_model.dart';
 
 final List<CategoryModel> catogriesData = [
   CategoryModel(name: 'Burger', image: AppAssets.burger),

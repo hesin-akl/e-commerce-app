@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/features/home/data/resturant/resturant_data.dart';
+import 'package:e_commerce_app/features/home/data/resturant_data.dart';
 import 'package:e_commerce_app/features/home/presentation/views/home/widgets/resturant_item.dart';
 import 'package:flutter/material.dart';
 
